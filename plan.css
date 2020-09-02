@@ -92,7 +92,11 @@ nav {
 }
 
 .hero {
-    background: url(/assets/aniket-deole-M6XC789HLe8-unsplash.jpg);
+    background: url('/assets/aniket-deole-M6XC789HLe8-unsplash.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
 }
 
 /*----Buttons----*/
