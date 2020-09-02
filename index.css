@@ -151,6 +151,18 @@ strong {
 	height: 40vh;
 }
 
+img:hover {
+	transition: 1s;
+	transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	transform: rotate(360deg);
+}
+
+img:not(:hover) {
+	transition: 1s;
+	transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	transform: rotate(-360deg);	
+}
+
 
 /*----Buttons----*/
 .btn {
@@ -161,7 +173,14 @@ strong {
 	margin: 6% 8%;
 	width: 15%;
 	color: #fff;
-	text-align: center;
+	text-align: center;	
+}
+
+.btn:hover {
+	transition: .5s;
+	transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+	color: #000;
+	padding: 2% 2%;
 }
 
 .btn.plan {
