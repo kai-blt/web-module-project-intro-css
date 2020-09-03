@@ -1,0 +1,209 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----Base CSS Begin----*/
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;	
+}
+
+
+body {
+	font-size: 2.4rem;
+	font-weight: 300;
+	line-height: 1.4;
+	font-family: 'Roboto Mono', monospace;
+}
+
+
+h1 {
+	font-family: 'Chelsea Market', cursive;
+	font-size: 4rem;
+}
+
+h2 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+ol {
+    list-style: decimal;
+    margin: 2rem 4rem;
+    font-size: 1.5rem;
+}
+
+/*----Classes----*/
+.container {
+	width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+nav {
+    width: 40%;
+    display: inline-block;
+}
+
+.logo {
+    display: inline-block;
+    width: 40%;
+    margin: 2%;
+}
+
+.hero {
+    background: url('/assets/aniket-deole-M6XC789HLe8-unsplash.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    box-shadow: inset 2rem 2rem 4rem #000;
+    margin: 4rem 0;
+}
+
+.hero.info1:hover, .hero.info2:hover,
+.hero.info3:hover, .hero.info4:hover,
+.hero.info5:hover, .hero.info6:hover,
+.hero.info7:hover, .hero.info8:hover {
+    filter: blur(.2rem);
+}
+
+.hero.info1, .hero.info2,
+.hero.info3, .hero.info4,
+.hero.info5, .hero.info6,
+.hero.info7, .hero.info8 {
+    background-size: cover;
+    color: #fff;
+    height: 20vh;
+    width: 80rem;
+    margin-left: 8rem;
+}
+
+.hero.info1 {
+    background: url('https://www.nps.gov/common/uploads/grid_builder/yose/crop1_1/693774A5-1DD8-B71B-0BB03B6CD1FC8976.jpg?width=640&quality=90&mode=crop');
+  
+}
+
+.hero.info2 {
+    background: url('https://www.nps.gov/common/uploads/grid_builder/yose/crop1_1/6B944074-1DD8-B71B-0B99F6B2204926CF.jpg?width=640&quality=90&mode=crop');
+
+}
+
+.hero.info3 {
+    background: url('https://www.nps.gov/common/uploads/grid_builder/yose/crop1_1/CFA3C028-1DD8-B71B-0B96D23A5B1DB959.jpg?width=640&quality=90&mode=crop');
+
+}
+
+.hero.info4 {
+    background: url('https://www.nps.gov/common/uploads/grid_builder/yose/crop1_1/6CD6C7FD-1DD8-B71B-0B6F0DF0577440AA.jpg?width=640&quality=90&mode=crop');
+
+}
+
+.hero.info5 {
+    background: url('https://www.nps.gov/common/uploads/grid_builder/yose/crop1_1/6CFE7ECF-1DD8-B71B-0BE9D34E526CB591.jpg?width=640&quality=90&mode=crop');
+
+}
+
+.hero.info6 {
+    background: url('https://www.nps.gov/common/uploads/grid_builder/yose/crop1_1/EDB20965-03D1-8351-68E6844B0B4DD877.jpg?width=640&quality=90&mode=crop');
+
+}
+
+.hero.info7 {
+    background: url('https://www.nps.gov/common/uploads/grid_builder/yose/crop1_1/6F27E60D-1DD8-B71B-0B14151D4F4BB714.jpg?width=640&quality=90&mode=crop');
+ 
+}
+
+.hero.info8 {
+    background: url('https://www.nps.gov/common/uploads/grid_builder/yose/crop1_1/70EE7B9B-1DD8-B71B-0B34FC00587706E0.jpg?width=640&quality=90&mode=crop');
+
+}
+
+
+/*----Buttons----*/
+.btn {
+	display: inline-block;		
+	text-decoration: none;
+	border-radius: 20px;
+	padding: 1% 2%;
+	margin: 6% 2%;
+	width: 26%;
+	color: #fff;
+	text-align: center;	
+}
+
+.btn:hover {
+	transition: .5s;
+	transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+	color: #000;
+	padding: 2% 2%;
+}
+
+.btn.plan {
+	background-color: #FF764E;
+}
+
+.btn.learn {
+	background-color: #5ED3EB;
+}
+
+.btn.involved {
+	background-color: #FFCD69;
+}
+
+footer .btn {
+	width: 14%;
+	margin: 4% 9%;
+}
